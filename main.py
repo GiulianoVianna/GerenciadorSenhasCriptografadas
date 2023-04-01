@@ -65,8 +65,6 @@ class GerenciadorSenhas(QWidget):
         """)
         self.btn_adicionar.clicked.connect(self.adicionar_senha)
 
-
-
         self.btn_mostrar = QPushButton('Mostrar Senhas')
         self.btn_mostrar.setStyleSheet("""
             QPushButton {
@@ -82,7 +80,6 @@ class GerenciadorSenhas(QWidget):
         """)
         self.btn_mostrar.clicked.connect(self.mostrar_senhas)
 
-
         self.btn_gerar_senha = QPushButton('Gerar Senha Aleatória')
         self.btn_gerar_senha.setStyleSheet("""
             QPushButton {
@@ -97,7 +94,6 @@ class GerenciadorSenhas(QWidget):
             }
         """)
         self.btn_gerar_senha.clicked.connect(self.gerar_senha_aleatoria)
-
 
         self.texto_saida = QPlainTextEdit()
         self.texto_saida.setReadOnly(True)
